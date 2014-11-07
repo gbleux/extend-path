@@ -1,3 +1,7 @@
+default: build
+
+all: clean test build
+
 clean:
 	rm extend-path
 
@@ -7,4 +11,4 @@ build:
 test:
 	go test .
 
-.PHONY: build test clean
+.PHONY: default all build test clean
