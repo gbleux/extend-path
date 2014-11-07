@@ -38,3 +38,7 @@ with additional directories in the _.profile_ initialization script.
         /opt/android/platform-tools)
     PATH=$(extend-path -delete /usr/local/bin)
     PATH=$(extend-path -validate -prepend "$HOME/bin")
+    
+    GOPATH=$(extend-path -validate -append \
+        -environment GOPATH
+        "/opt/go-appengine/gopath")
