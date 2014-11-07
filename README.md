@@ -26,7 +26,10 @@ Alternatively you can build it locally and copy the binary manually
 
 ## Usage
 
-    extend-path [-d|-a|-p] [-s] [-v] [-e VAR] DIR...
+    extend-path \
+        [-delete|-append|-prepend] \
+        [-relocate] [-validate] [-environment VAR] \
+        DIR...
 
 The program was writte with the intend of setting of environments for
 interactive shells. As an example one could extend the PATH variable
